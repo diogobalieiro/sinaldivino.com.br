@@ -1,0 +1,158 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  width: 100vw;
+}
+
+.header {
+  background-color: #ff0000;
+  color: #fff;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header p{
+  margin-top:8px;
+  margin-bottom:8px;
+}
+
+.contagem-regressiva {
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.titulo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.content_2{
+  display: flex;
+  padding:2em;
+  align-items: center;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.content_1{
+  display: flex;
+  padding:2em;
+  align-items: center;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.content {
+  /* display:flex;
+  justify-content: space-between;
+  flex: 1;
+  padding: 10px; */
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  background: linear-gradient(to bottom, #1c2331, #39425e);
+  padding: 6px;
+  padding-right: 18px;
+}
+
+.botao-direita {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px){
+  .header{
+    grid-row:1;
+  }
+  .footer{
+    grid-row:3;
+    align-items: center;
+    justify-content: center;
+  }
+  .container{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+    "header"
+    "content"
+    "footer";
+    grid-auto-rows: minmax(0, auto);
+    height:100vh;
+  }
+
+  .content_1{
+    padding: 1em;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    max-width: 100%;
+  }
+
+  .content_2{
+    padding: 1em;
+  }
+
+
+  .content{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "video"
+    "results";
+    overflow: auto;
+  }
+
+  #contato, #dice{
+    display:none !important;
+  }
+}
+
+@media (min-width: 769px) {
+  .container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header header"
+    "content content"
+    "footer footer";
+  }
+
+  .content{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "results video"
+  }
+
+}
