@@ -108,6 +108,7 @@ body {
     justify-content: center;
   }
   .container{
+    overflow-y:hidden;
     display:grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
