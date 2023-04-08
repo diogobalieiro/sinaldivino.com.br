@@ -14,7 +14,7 @@ const estilo = {
       alignItems: 'center',
       backgroundColor: '#F7F7F7',
       borderRadius: '10px',
-      padding: '20px',
+      padding: '2em',
       boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
 
     },
@@ -38,11 +38,11 @@ const estilo = {
       height: '10px',
       borderRadius: '50%',
       marginRight: '5px',
-      backgroundColor: "white",
       border: "1px solid black",
     },
     labelResultado:{
       marginLeft: '4px',
+      display: 'none'
     }
   };
 

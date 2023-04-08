@@ -26,7 +26,7 @@ const QuadroTexto = () => {
   };
 
   if (window.matchMedia('(max-width: 768px)').matches) {
-    estilo.container.padding = '6px';
+    estilo.container.padding = '2em';
     estilo.container.flexWrap = 'wrap';
     estilo.container.overflow = 'wrap';
     estilo.container.wordWrap = 'break-word'
