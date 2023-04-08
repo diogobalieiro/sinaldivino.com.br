@@ -11,6 +11,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
+  max-height: 100vh;
   width: 100vw;
 }
 
@@ -21,6 +22,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position:sticky;
+  top: 0;
+
 }
 
 .header p{
@@ -67,6 +71,8 @@ body {
 }
 
 .footer {
+  position:sticky;
+  bottom:0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -74,6 +80,7 @@ body {
   background: linear-gradient(to bottom, #1c2331, #39425e);
   padding: 6px;
   padding-right: 18px;
+  z-index:999;
 }
 
 .botao-direita {
@@ -89,10 +96,14 @@ body {
 
 @media (max-width: 768px){
   .header{
-    grid-row:1;
+    grid-area: "header";
+    top: 0;
+    position: sticky;
   }
   .footer{
-    grid-row:3;
+    position: sticky;
+    bottom: 0;
+    grid-area: "footer";
     align-items: center;
     justify-content: center;
   }
@@ -126,12 +137,13 @@ body {
 
   .content{
     display:grid;
+    overflow-y: scroll;
+    grid-area: content;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas:
     "video"
     "results";
-    overflow: auto;
     max-width: 100%;
   }
 
