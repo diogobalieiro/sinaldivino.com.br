@@ -36,10 +36,6 @@ const styles = {
   
 };
 
-if (window.matchMedia('(max-width: 768px)').matches) {
-  styles.precoPromocional.fontSize = '1.5em';
-  styles.precoOriginal.fontSize = '0.6em';
-  }
 
 function ComprarButton() {
   const [hover, setHover] = React.useState(false);

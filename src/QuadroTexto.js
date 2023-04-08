@@ -18,9 +18,6 @@ const QuadroTexto = () => {
       fontSize: '24px',
       fontWeight: 'bold',
       marginBottom: '24px',
-      '@media(max-width: 768px)':{
-        fontSize: '14px'
-      }
     },
     texto: {
       fontSize: '16px',
@@ -35,6 +32,7 @@ const QuadroTexto = () => {
     estilo.container.wordWrap = 'break-word'
     estilo.container.maxWidth = '100%';
     estilo.texto.fontSize = '14px';
+    estilo.titulo.fontSize = '14px';
     estilo.titulo.marginBottom = '8px';
   
   }
