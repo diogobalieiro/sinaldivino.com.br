@@ -105,11 +105,12 @@ body {
     "content"
     "footer";
     grid-auto-rows: minmax(0, auto);
-    height:100vh;
+    
   }
 
   .content_1{
-    padding: 1em;
+    margin: 0.2em;
+    padding: 0;
     display:grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -117,7 +118,9 @@ body {
   }
 
   .content_2{
-    padding: 1em;
+    margin: 0.2em;
+    padding: 0;
+    max-width: 100%;
   }
 
 
@@ -129,6 +132,11 @@ body {
     "video"
     "results";
     overflow: auto;
+    max-width: 100%;
+  }
+
+  .contagem-regressiva{
+    font-size: 18px;
   }
 
   #contato, #dice{

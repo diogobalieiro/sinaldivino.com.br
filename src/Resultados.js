@@ -42,13 +42,13 @@ const estilo = {
     },
     labelResultado:{
       marginLeft: '4px',
-      display: 'none'
     }
   };
 
   if (window.matchMedia('(max-width: 768px)').matches) {
     estilo.container.fontSize ='0.8em';
     estilo.labelResultado.display = 'none';
+    estilo.container.width = '';
   }
   return (
     <div

@@ -31,6 +31,7 @@ const QuadroTexto = () => {
     estilo.container.overflow = 'wrap';
     estilo.container.wordWrap = 'break-word'
     estilo.container.maxWidth = '100%';
+    estilo.container.width = '';
     estilo.texto.fontSize = '14px';
     estilo.titulo.fontSize = '14px';
     estilo.titulo.marginBottom = '8px';
