@@ -14,14 +14,18 @@ import DiceImg from './img/pngegg3.png';
 function App() {
   const headerRef = useRef(null);
   const contentRef = useRef(null);
+  const footerRef = useRef(null);
 
   useEffect(() => {
     function setMargin() {
       const header = headerRef.current;
+      const footer = footerRef.current;
       const content = contentRef.current;
 
       const headerHeight = header.offsetHeight;
-      content.style.marginTop = `${headerHeight}px`;
+      const footerHeight = footer.offsetHeight;
+      content.style.paddingTop = `${headerHeight}px`;
+      content.style.paddingBottom = `${footerHeight}px`;
 
     }
     if (window.matchMedia("(max-width: 768px)").matches) {
@@ -47,7 +51,7 @@ function App() {
           <VideoPlayer />
         </div>
       </main>
-      <footer className="footer" style={{gridArea:"footer"}}>
+      <footer className="footer" ref={footerRef} style={{gridArea:"footer"}}>
         <div style={{display:'flex'}} id="contato">
           <Contato />
         </div>
