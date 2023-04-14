@@ -49,7 +49,7 @@ function ComprarButton() {
   };
   
   const handleClick = () => {
-    window.location.href = 'https://pag.ae/7ZfZYRSCN'
+    window.location.href = 'https://pag.ae/7ZinYuYS6'
   }
 
   return (
