@@ -20,11 +20,15 @@ const styles = {
     marginRight: '0.8em',
     fontFamily: 'Poppins, sans-serif',
   },
+  parcelas: {
+    fontSize: '0.4em',
+  }
 };
 
 if (window.matchMedia('(max-width: 768px)').matches) {
   styles.precoPromocional.fontSize = '1.5em';
   styles.precoOriginal.fontSize = '0.6em';
+  styles.parcelas.fontSize = '0.2em'
   }
 
 
@@ -35,7 +39,7 @@ function Preco(props) {
   return (
     <div style={styles.preco}>
       <div style={styles.precoOriginal}>{`R$ ${precoOriginal}`}</div>
-      <div style={styles.precoPromocional}>{`R$ ${precoPromocional}`}</div>
+      <div style={styles.precoPromocional}><span style={styles.parcelas}>10x </span>{`R$ ${precoPromocional}`}</div>
     </div>
   );
 }

@@ -56,7 +56,7 @@ function App() {
           <Contato />
         </div>
         <div style={{display:'flex'}}>
-          <Preco precoOriginal="399,99" precoPromocional="99" />
+          <Preco precoOriginal="399,99" precoPromocional="9,90" />
           <ComprarButton />
           <img src={DiceImg} style={{width:'6em'}} id="dice" />
         </div>
