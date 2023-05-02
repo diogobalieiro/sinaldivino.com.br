@@ -26,15 +26,15 @@ function Contato() {
   return (
     <div style={styles.contato}>
       <p style={styles.texto}>
-        <a href="https://t.me/nomedogrupo" style={{
+        <a href="https://t.me/+djoSyAJNF3IzZWNh" style={{
           textDecoration: 'none', color: '#fff', alignItems: 'center', display: 'flex'
         }}target="_blank" rel="noopener noreferrer">
           <FaTelegram style={styles.icone} />
-          <b>@sinaldivino </b>
+          <b>@sinaldivinosuporte </b>
         </a>
       </p>
       <p style={styles.texto}>
-        <a href="mailto:contato@empresa.com.br" style={{
+        <a href="mailto:sinaldivino2@gmail.com" style={{
           textDecoration: 'none', color: '#fff', alignItems: 'center', display: 'flex'
         }}>
           <FaEnvelope style={styles.icone} />

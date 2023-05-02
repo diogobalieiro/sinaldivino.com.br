@@ -16,9 +16,11 @@ function App() {
     }
     // Inicializa o pixel com o pixelId 5678 na rota B
     if (window.location.pathname === '/inicio') {
-      initPixel('5678');
+      initPixel('563034962636765');
     }
   }, []);
+
+
 
   return (
       <BrowserRouter>

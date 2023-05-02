@@ -1,5 +1,5 @@
 import React from 'react';
-
+import ReactPixel from 'react-facebook-pixel';
 
 const styles = {
   '@keyframes moveUpDown': {
@@ -49,7 +49,8 @@ function ComprarButton() {
   };
   
   const handleClick = () => {
-    window.location.href = 'https://pag.ae/7ZinYuYS6'
+    ReactPixel.trackCustom('IniciouCheckout');
+    window.open('https://pag.ae/7ZinYuYS6', '_blank');
   }
 
   return (
@@ -67,5 +68,7 @@ function ComprarButton() {
     </button>
   );
 }
+
+
 
 export default ComprarButton;
