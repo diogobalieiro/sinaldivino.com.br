@@ -1,27 +1,24 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
-import ReactPixel from 'react-facebook-pixel';
 import HomePage from './HomePage';
+import { compraEfetuada, entrouNoSite } from './facebookPixelEvent';
 
-const initPixel = (pixelId) => {
-  ReactPixel.init(pixelId);
-};
+
 
 function App() {
-  useEffect(() => {
     // Inicializa o pixel com o pixelId 1234 na rota A
+  useEffect(() => {
     if (window.location.pathname === '/') {
-      initPixel('179538898286619');
+      entrouNoSite();
+      
     }
     // Inicializa o pixel com o pixelId 5678 na rota B
     if (window.location.pathname === '/inicio') {
-      initPixel('563034962636765');
+      compraEfetuada();
     }
-  }, []);
-
-
-
+  },[])
+  
   return (
       <BrowserRouter>
         <Routes>

@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactPixel from 'react-facebook-pixel';
+import { iniciouCheckout } from './facebookPixelEvent';
 
 const styles = {
   '@keyframes moveUpDown': {
@@ -49,7 +49,7 @@ function ComprarButton() {
   };
   
   const handleClick = () => {
-    ReactPixel.trackCustom('IniciouCheckout');
+    iniciouCheckout();
     window.open('https://pag.ae/7ZinYuYS6', '_blank');
   }
 

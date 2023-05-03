@@ -9,6 +9,7 @@ import QuadroTexto from './QuadroTexto';
 import Contato from './Contato';
 import DiceImg from './img/pngegg3.png';
 
+
 function HomePage() {
     const headerRef = useRef(null);
     const contentRef = useRef(null);
