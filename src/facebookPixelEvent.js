@@ -3,6 +3,7 @@ export const iniciouCheckout = () => {
 }
 
 export const compraEfetuada = () => {
+    
     window.fbq('track', 'CompraEfetuada');
 }
 

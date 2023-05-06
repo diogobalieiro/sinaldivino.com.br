@@ -6,17 +6,19 @@ import { compraEfetuada, entrouNoSite } from './facebookPixelEvent';
 
 
 
-function App() {
+function Apps() {
+  console.log('dada');
     // Inicializa o pixel com o pixelId 1234 na rota A
   useEffect(() => {
     if (window.location.pathname === '/') {
+      console.log('entrou no site');
       entrouNoSite();
       
-    }
-    // Inicializa o pixel com o pixelId 5678 na rota B
-    if (window.location.pathname === '/inicio') {
+    } else if (window.location.pathname === '/inicio'){
       compraEfetuada();
     }
+    // Inicializa o pixel com o pixelId 5678 na rota B
+
   },[])
   
   return (
@@ -29,4 +31,4 @@ function App() {
   );
 }
 
-export default App;
+export default Apps;
